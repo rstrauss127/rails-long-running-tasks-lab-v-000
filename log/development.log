@@ -2616,3 +2616,14 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 191ms (Views: 186.7ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/songs/upload" for 68.174.146.0 at 2019-06-27 19:21:36 +0000
+Cannot render console from 68.174.146.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KKnctz6KZL5irKFRqcm9nfJYP8yUhB/H7DblILVCLt+yCW5+Y3pJC7EDlVzhaVLW7aVho//pYS8zjicGdzCSsw==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:50:in `upload'
